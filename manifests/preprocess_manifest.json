@@ -1,0 +1,5140 @@
+{
+  "n_subjects": 30,
+  "n_ok": 30,
+  "n_failed": 0,
+  "failed": [],
+  "fs_target_hz": 64,
+  "resample_ratio": "8/125",
+  "modalities": [
+    "ecg",
+    "bvp",
+    "gsr",
+    "rsp",
+    "skt",
+    "emg_zygo",
+    "emg_coru",
+    "emg_trap"
+  ],
+  "filters": {
+    "ecg": {
+      "filter": {
+        "type": "bandpass",
+        "low_hz": 0.5,
+        "high_hz": 30.0,
+        "order": 4
+      },
+      "envelope": false,
+      "envelope_lowpass_hz": null
+    },
+    "bvp": {
+      "filter": {
+        "type": "bandpass",
+        "low_hz": 0.5,
+        "high_hz": 8.0,
+        "order": 4
+      },
+      "envelope": false,
+      "envelope_lowpass_hz": null
+    },
+    "gsr": {
+      "filter": {
+        "type": "lowpass",
+        "high_hz": 5.0,
+        "order": 4
+      },
+      "envelope": false,
+      "envelope_lowpass_hz": null
+    },
+    "rsp": {
+      "filter": {
+        "type": "lowpass",
+        "high_hz": 1.0,
+        "order": 4
+      },
+      "envelope": false,
+      "envelope_lowpass_hz": null
+    },
+    "skt": {
+      "filter": {
+        "type": "lowpass",
+        "high_hz": 1.0,
+        "order": 4
+      },
+      "envelope": false,
+      "envelope_lowpass_hz": null
+    },
+    "emg_zygo": {
+      "filter": {
+        "type": "bandpass",
+        "low_hz": 20.0,
+        "high_hz": 450.0,
+        "order": 4
+      },
+      "envelope": true,
+      "envelope_lowpass_hz": 8.0
+    },
+    "emg_coru": {
+      "filter": {
+        "type": "bandpass",
+        "low_hz": 20.0,
+        "high_hz": 450.0,
+        "order": 4
+      },
+      "envelope": true,
+      "envelope_lowpass_hz": 8.0
+    },
+    "emg_trap": {
+      "filter": {
+        "type": "bandpass",
+        "low_hz": 20.0,
+        "high_hz": 450.0,
+        "order": 4
+      },
+      "envelope": true,
+      "envelope_lowpass_hz": 8.0
+    }
+  },
+  "total_cache_mb": 61.3,
+  "subjects": [
+    {
+      "subject_id": 1,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 460168.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.855147629310344,
+          "anno_arousal_mean": 6.3633542564655174
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1628001.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 8.960571634893125,
+          "anno_arousal_mean": 6.454243212016175
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.315135271807837,
+          "anno_arousal_mean": 3.319710914454277
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.862116489693941,
+          "anno_arousal_mean": 4.670027170518426
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 765751.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.26862405237767,
+          "anno_arousal_mean": 5.726823914541695
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1921084.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.011675298126065,
+          "anno_arousal_mean": 5.254194548551959
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1030876.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 1.7738434010152284,
+          "anno_arousal_mean": 8.310378426395939
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 2187834.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.491447652173913,
+          "anno_arousal_mean": 7.235625739130436
+        }
+      },
+      "cache_file": "sub_1.npz",
+      "cache_size_mb": 2.02
+    },
+    {
+      "subject_id": 2,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.182395204741379,
+          "anno_arousal_mean": 5.212643588362068
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.9773024263431545,
+          "anno_arousal_mean": 5.151483246678221
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1630792.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.251867256637168,
+          "anno_arousal_mean": 4.366260851243152
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 781334.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.02557995003123,
+          "anno_arousal_mean": 3.957635227982511
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1869459.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.472172984148864,
+          "anno_arousal_mean": 3.1050179186767743
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 514584.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.079063373083475,
+          "anno_arousal_mean": 5.0615124361158434
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 2134584.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.519316497461929,
+          "anno_arousal_mean": 8.044927664974619
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1061459.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.3882674782608695,
+          "anno_arousal_mean": 7.222778434782609
+        }
+      },
+      "cache_file": "sub_2.npz",
+      "cache_size_mb": 2.036
+    },
+    {
+      "subject_id": 3,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 803626.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.948490840517242,
+          "anno_arousal_mean": 6.30546713362069
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.3186184286539575,
+          "anno_arousal_mean": 5.907577411900635
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1109209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.002740834386851,
+          "anno_arousal_mean": 2.109337968815845
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1640959.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.256560587133042,
+          "anno_arousal_mean": 4.6065302935665216
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.184907649896623,
+          "anno_arousal_mean": 3.778773259820813
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 2184834.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.863384667802385,
+          "anno_arousal_mean": 4.849348551959114
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 486626.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.6815213197969543,
+          "anno_arousal_mean": 8.438806852791878
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1921084.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.856341565217391,
+          "anno_arousal_mean": 7.677803826086956
+        }
+      },
+      "cache_file": "sub_3.npz",
+      "cache_size_mb": 2.071
+    },
+    {
+      "subject_id": 4,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 2146001.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.423628502155173,
+          "anno_arousal_mean": 5.791367995689655
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 501626.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.507471981513577,
+          "anno_arousal_mean": 6.334916233391104
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.5627619047619055,
+          "anno_arousal_mean": 5.984389801938475
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.823341036851968,
+          "anno_arousal_mean": 4.530929731417864
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1563876.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.508318056512749,
+          "anno_arousal_mean": 3.8854110957960026
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1058459.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.190298807495741,
+          "anno_arousal_mean": 5.1793863713798975
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1829001.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 1.5586743654822335,
+          "anno_arousal_mean": 7.342701015228427
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 794709.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.6452966956521737,
+          "anno_arousal_mean": 6.904228173913043
+        }
+      },
+      "cache_file": "sub_4.npz",
+      "cache_size_mb": 2.068
+    },
+    {
+      "subject_id": 5,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.56655630387931,
+          "anno_arousal_mean": 4.553043372844828
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1611626.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.347543038705951,
+          "anno_arousal_mean": 5.31460283073368
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1109209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.329834808259587,
+          "anno_arousal_mean": 1.8128457648546143
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1904709.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.547768894440974,
+          "anno_arousal_mean": 3.8204144284821986
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 844084.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.549640937284631,
+          "anno_arousal_mean": 1.9659545141281873
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 2184834.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.851599659284497,
+          "anno_arousal_mean": 5.413949914821124
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 527084.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 1.8625319796954318,
+          "anno_arousal_mean": 7.551069289340102
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.4547572173913044,
+          "anno_arousal_mean": 7.743435130434783
+        }
+      },
+      "cache_file": "sub_5.npz",
+      "cache_size_mb": 2.081
+    },
+    {
+      "subject_id": 6,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 2146001.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.684527747844829,
+          "anno_arousal_mean": 5.446074622844827
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1032126.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.084530618139803,
+          "anno_arousal_mean": 5.0299220103986135
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1642209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.4648727349346817,
+          "anno_arousal_mean": 3.654462284028656
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 752001.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.941384447220487,
+          "anno_arousal_mean": 3.682378825733916
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1880876.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.589211233631979,
+          "anno_arousal_mean": 3.9554803583735354
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.159781260647359,
+          "anno_arousal_mean": 4.891991141396933
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.9184753807106594,
+          "anno_arousal_mean": 6.316592385786802
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 488251.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.719467478260869,
+          "anno_arousal_mean": 6.446626434782608
+        }
+      },
+      "cache_file": "sub_6.npz",
+      "cache_size_mb": 2.031
+    },
+    {
+      "subject_id": 7,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1042293.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.1454714439655165,
+          "anno_arousal_mean": 5.120552262931034
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1628001.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.375862218370884,
+          "anno_arousal_mean": 5.1724589832466785
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 486626.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.21887610619469,
+          "anno_arousal_mean": 4.999019384745048
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.077015927545284,
+          "anno_arousal_mean": 3.8389440974391005
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.5885740868366645,
+          "anno_arousal_mean": 5.271827705031013
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 2184834.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.365501873935265,
+          "anno_arousal_mean": 4.96544258943782
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 725293.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.918619035532995,
+          "anno_arousal_mean": 7.353276395939086
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1921084.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.827970434782609,
+          "anno_arousal_mean": 5.96941147826087
+        }
+      },
+      "cache_file": "sub_7.npz",
+      "cache_size_mb": 2.059
+    },
+    {
+      "subject_id": 8,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 725293.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.669083782327586,
+          "anno_arousal_mean": 7.089137931034482
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1628001.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 8.25284373194685,
+          "anno_arousal_mean": 5.342196995956095
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.724764011799409,
+          "anno_arousal_mean": 3.953329962073325
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.726343222985635,
+          "anno_arousal_mean": 2.506019050593379
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 460168.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.279969676085459,
+          "anno_arousal_mean": 2.643606822880772
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1921084.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.082585689948893,
+          "anno_arousal_mean": 4.428692333901193
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1030876.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 1.4954873096446701,
+          "anno_arousal_mean": 8.557602791878173
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 2187834.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.9932716521739127,
+          "anno_arousal_mean": 7.155621913043477
+        }
+      },
+      "cache_file": "sub_8.npz",
+      "cache_size_mb": 2.073
+    },
+    {
+      "subject_id": 9,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1829001.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.053325431034484,
+          "anno_arousal_mean": 4.414040948275861
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.390121028307335,
+          "anno_arousal_mean": 3.8158867706528015
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.20479603876949,
+          "anno_arousal_mean": 4.075218710493047
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 514584.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.259976889444097,
+          "anno_arousal_mean": 3.462849469081824
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1563876.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.049690902825638,
+          "anno_arousal_mean": 4.530306685044796
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 794709.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.86390391822828,
+          "anno_arousal_mean": 4.294005792163543
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 2134584.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.973076395939086,
+          "anno_arousal_mean": 6.20067614213198
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1061459.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.138940521739131,
+          "anno_arousal_mean": 6.16487895652174
+        }
+      },
+      "cache_file": "sub_9.npz",
+      "cache_size_mb": 2.079
+    },
+    {
+      "subject_id": 10,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1563876.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.785380926724138,
+          "anno_arousal_mean": 5.593528825431035
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1032126.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.800275563258231,
+          "anno_arousal_mean": 5.159376083188909
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.088238516645597,
+          "anno_arousal_mean": 3.688908554572271
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 752001.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.961406933166771,
+          "anno_arousal_mean": 3.7140952529668954
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1869459.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.585800482425912,
+          "anno_arousal_mean": 3.770956926257753
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 485251.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.67856797274276,
+          "anno_arousal_mean": 4.979013628620102
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 2134584.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.8573467005076143,
+          "anno_arousal_mean": 6.727864213197971
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.6992504347826083,
+          "anno_arousal_mean": 7.2733426086956525
+        }
+      },
+      "cache_file": "sub_10.npz",
+      "cache_size_mb": 2.038
+    },
+    {
+      "subject_id": 11,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 777168.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.6680579202586205,
+          "anno_arousal_mean": 5.046080549568965
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1891751.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.756012131715771,
+          "anno_arousal_mean": 4.83653148469093
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.8555368731563417,
+          "anno_arousal_mean": 2.1079742941424358
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1611626.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.2753981886321055,
+          "anno_arousal_mean": 3.937056214865709
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1082751.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.442122329427981,
+          "anno_arousal_mean": 4.285862853204686
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 2184834.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.0681410562180575,
+          "anno_arousal_mean": 4.346135604770017
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 460168.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.0434748730964465,
+          "anno_arousal_mean": 6.466034263959392
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.921736695652173,
+          "anno_arousal_mean": 5.890314782608695
+        }
+      },
+      "cache_file": "sub_11.npz",
+      "cache_size_mb": 2.021
+    },
+    {
+      "subject_id": 12,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 2146001.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.835266433189655,
+          "anno_arousal_mean": 6.206268318965517
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 501626.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.071678509532062,
+          "anno_arousal_mean": 5.61933217793183
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1590334.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.028418036241046,
+          "anno_arousal_mean": 3.3524134007585333
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.1803666458463455,
+          "anno_arousal_mean": 3.8834962523422862
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.672519297036527,
+          "anno_arousal_mean": 5.258165747760166
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 794709.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.431929471890971,
+          "anno_arousal_mean": 5.205542759795571
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1829001.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.13272994923858,
+          "anno_arousal_mean": 6.634884263959391
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1061459.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.4034532173913044,
+          "anno_arousal_mean": 6.668281391304348
+        }
+      },
+      "cache_file": "sub_12.npz",
+      "cache_size_mb": 2.03
+    },
+    {
+      "subject_id": 13,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1042293.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 8.218776131465518,
+          "anno_arousal_mean": 5.09733755387931
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1614626.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.30393125361063,
+          "anno_arousal_mean": 5.070152224147891
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 486626.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.108087652760219,
+          "anno_arousal_mean": 4.821087652760219
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1907709.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.224500936914428,
+          "anno_arousal_mean": 5.013279825109307
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.713625086147485,
+          "anno_arousal_mean": 3.61978911095796
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.094587393526405,
+          "anno_arousal_mean": 4.993251788756388
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 725293.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.973321319796954,
+          "anno_arousal_mean": 7.045132233502538
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 2187834.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.388604521739131,
+          "anno_arousal_mean": 6.323996173913044
+        }
+      },
+      "cache_file": "sub_13.npz",
+      "cache_size_mb": 2.058
+    },
+    {
+      "subject_id": 14,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1642209.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.129363685344828,
+          "anno_arousal_mean": 5.30590786637931
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.485019641825534,
+          "anno_arousal_mean": 4.994776140958984
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1947792.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.980168563000421,
+          "anno_arousal_mean": 4.016745048461863
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 514584.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.375742036227358,
+          "anno_arousal_mean": 4.7384013116802
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 2186459.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.370474155754652,
+          "anno_arousal_mean": 4.054865265334252
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1058459.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.051124361158433,
+          "anno_arousal_mean": 4.571284497444634
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.0191276649746195,
+          "anno_arousal_mean": 6.695898477157361
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 794709.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.927244869565218,
+          "anno_arousal_mean": 7.250257739130435
+        }
+      },
+      "cache_file": "sub_14.npz",
+      "cache_size_mb": 2.031
+    },
+    {
+      "subject_id": 15,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 725293.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.269057650862069,
+          "anno_arousal_mean": 5.210406249999999
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.630365106874639,
+          "anno_arousal_mean": 5.192919410745235
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.451953223767383,
+          "anno_arousal_mean": 4.983499367888749
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1640959.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.960958775765146,
+          "anno_arousal_mean": 4.821669269206746
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 460168.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.230046519641627,
+          "anno_arousal_mean": 4.506905237767056
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 2184834.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.166241567291312,
+          "anno_arousal_mean": 4.915070528109029
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1030876.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.80317233502538,
+          "anno_arousal_mean": 7.317096700507613
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1921084.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.702262956521739,
+          "anno_arousal_mean": 6.672783652173913
+        }
+      },
+      "cache_file": "sub_15.npz",
+      "cache_size_mb": 2.068
+    },
+    {
+      "subject_id": 16,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1563876.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 8.512865301724137,
+          "anno_arousal_mean": 5.85020474137931
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.817392836510688,
+          "anno_arousal_mean": 4.474216060080878
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.0,
+          "anno_arousal_mean": 5.0
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 781334.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.96419768894441,
+          "anno_arousal_mean": 3.3469500312304814
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 2186459.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.001731909028256,
+          "anno_arousal_mean": 4.085975878704342
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 514584.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.8663039182282795,
+          "anno_arousal_mean": 4.978556047700171
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1869459.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.398964213197969,
+          "anno_arousal_mean": 7.698420304568527
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1061459.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.434620521739131,
+          "anno_arousal_mean": 6.3224921739130435
+        }
+      },
+      "cache_file": "sub_16.npz",
+      "cache_size_mb": 2.021
+    },
+    {
+      "subject_id": 17,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1042293.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.513028825431034,
+          "anno_arousal_mean": 4.703850754310345
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 2158501.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.230332755632581,
+          "anno_arousal_mean": 4.575080878105141
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 803626.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.786986093552465,
+          "anno_arousal_mean": 4.30791571849979
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1878376.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.88756152404747,
+          "anno_arousal_mean": 3.3905555902560893
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 538501.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.978013783597519,
+          "anno_arousal_mean": 5.2927456926257745
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1611626.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.445450085178876,
+          "anno_arousal_mean": 4.615082112436116
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.016030964467006,
+          "anno_arousal_mean": 6.8943954314720814
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.737728695652174,
+          "anno_arousal_mean": 6.189584
+        }
+      },
+      "cache_file": "sub_17.npz",
+      "cache_size_mb": 2.023
+    },
+    {
+      "subject_id": 18,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.775353987068966,
+          "anno_arousal_mean": 5.8835088900862065
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.963754188330444,
+          "anno_arousal_mean": 5.466181686886194
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1630792.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.445123472397809,
+          "anno_arousal_mean": 4.389280235988201
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 778334.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.949819487820112,
+          "anno_arousal_mean": 4.830866333541536
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 2186459.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.616118194348725,
+          "anno_arousal_mean": 4.5659727773949
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1058459.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.585542759795572,
+          "anno_arousal_mean": 5.129453151618399
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1869459.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.130524873096447,
+          "anno_arousal_mean": 5.938676142131979
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 514584.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.3868737391304355,
+          "anno_arousal_mean": 5.862501913043478
+        }
+      },
+      "cache_file": "sub_18.npz",
+      "cache_size_mb": 2.048
+    },
+    {
+      "subject_id": 19,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 460168.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.073571120689656,
+          "anno_arousal_mean": 5.503966325431035
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1628001.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.972015597920278,
+          "anno_arousal_mean": 5.005565857885616
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.849389380530973,
+          "anno_arousal_mean": 5.117054361567636
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.0,
+          "anno_arousal_mean": 5.007490943160525
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1082751.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 8.794832873880084,
+          "anno_arousal_mean": 5.082140248104755
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1921084.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.080988074957411,
+          "anno_arousal_mean": 5.061074275979557
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 765751.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 1.9275609137055838,
+          "anno_arousal_mean": 7.814778680203046
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 2187834.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.6881433043478262,
+          "anno_arousal_mean": 6.80087547826087
+        }
+      },
+      "cache_file": "sub_19.npz",
+      "cache_size_mb": 2.023
+    },
+    {
+      "subject_id": 20,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1563876.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.548996497844827,
+          "anno_arousal_mean": 6.094072467672415
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 765376.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.589654246100519,
+          "anno_arousal_mean": 5.460541883304448
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.231735356089339,
+          "anno_arousal_mean": 4.510841550779603
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.176220174890693,
+          "anno_arousal_mean": 4.746769519050594
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1869459.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.26625671950379,
+          "anno_arousal_mean": 3.568857339765679
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1058459.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.2934173764906305,
+          "anno_arousal_mean": 5.121113798977854
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 2134584.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.2133403553299495,
+          "anno_arousal_mean": 7.7560847715736045
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 501626.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.4862862608695653,
+          "anno_arousal_mean": 7.453114434782609
+        }
+      },
+      "cache_file": "sub_20.npz",
+      "cache_size_mb": 2.064
+    },
+    {
+      "subject_id": 21,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.109856142241379,
+          "anno_arousal_mean": 5.316200431034482
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1894751.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.975260543038706,
+          "anno_arousal_mean": 5.114010398613518
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 792209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.445214075010536,
+          "anno_arousal_mean": 2.990417614833544
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1614626.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.924004059962524,
+          "anno_arousal_mean": 2.787305746408495
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 527084.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.411328738800827,
+          "anno_arousal_mean": 4.783423156443832
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.0,
+          "anno_arousal_mean": 5.0387199318569
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1030876.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.741069543147208,
+          "anno_arousal_mean": 7.085029187817259
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 2187834.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.904738782608695,
+          "anno_arousal_mean": 5.762709217391304
+        }
+      },
+      "cache_file": "sub_21.npz",
+      "cache_size_mb": 1.995
+    },
+    {
+      "subject_id": 22,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 2146001.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.75209213362069,
+          "anno_arousal_mean": 5.759455280172413
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.480714615829001,
+          "anno_arousal_mean": 6.041407279029462
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1907334.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.079992836072482,
+          "anno_arousal_mean": 4.9086413822166035
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 778334.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.1150449718925675,
+          "anno_arousal_mean": 4.951318863210493
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1642209.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.484453824948311,
+          "anno_arousal_mean": 3.7448097863542387
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1058459.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.954935604770017,
+          "anno_arousal_mean": 5.628786712095401
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 1.6816606598984774,
+          "anno_arousal_mean": 6.495298984771574
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 514584.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.7345801739130433,
+          "anno_arousal_mean": 6.888997217391304
+        }
+      },
+      "cache_file": "sub_22.npz",
+      "cache_size_mb": 2.059
+    },
+    {
+      "subject_id": 23,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 538501.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.2399542025862065,
+          "anno_arousal_mean": 4.995917564655172
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 2158501.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.403929520508377,
+          "anno_arousal_mean": 4.980575389948007
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 844084.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.145242730720607,
+          "anno_arousal_mean": 3.6668196375895494
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1878376.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.135676764522175,
+          "anno_arousal_mean": 3.592183635227982
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1082751.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.8458266712611993,
+          "anno_arousal_mean": 3.400415575465196
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1611626.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.0664562180579225,
+          "anno_arousal_mean": 3.672973083475298
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.606001269035533,
+          "anno_arousal_mean": 6.937114467005077
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.455769391304347,
+          "anno_arousal_mean": 6.115182608695653
+        }
+      },
+      "cache_file": "sub_23.npz",
+      "cache_size_mb": 2.026
+    },
+    {
+      "subject_id": 24,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1829001.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.7377885237068975,
+          "anno_arousal_mean": 5.093596713362069
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1032126.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.043015886770654,
+          "anno_arousal_mean": 4.989492778740614
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1590334.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.231398651495997,
+          "anno_arousal_mean": 4.139748419721871
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 752001.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.015488444722048,
+          "anno_arousal_mean": 2.5055352904434725
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.246577877325982,
+          "anno_arousal_mean": 3.63957822191592
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.103972402044293,
+          "anno_arousal_mean": 5.797480749574105
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 2134584.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.5646380710659895,
+          "anno_arousal_mean": 6.271270050761422
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 488251.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.4758643478260876,
+          "anno_arousal_mean": 6.578688695652174
+        }
+      },
+      "cache_file": "sub_24.npz",
+      "cache_size_mb": 2.028
+    },
+    {
+      "subject_id": 25,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.297365840517242,
+          "anno_arousal_mean": 5.745959859913794
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.091187752744079,
+          "anno_arousal_mean": 5.397889081455806
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1109209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.016676359039191,
+          "anno_arousal_mean": 2.821859249894648
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 2171459.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.987276077451593,
+          "anno_arousal_mean": 3.5006102435977513
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 844084.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.85037422467264,
+          "anno_arousal_mean": 3.6563886974500344
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1640959.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.068244293015332,
+          "anno_arousal_mean": 4.042283134582624
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 527084.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.4150527918781726,
+          "anno_arousal_mean": 7.5269624365482235
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1907709.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.5951547826086956,
+          "anno_arousal_mean": 6.920125565217391
+        }
+      },
+      "cache_file": "sub_25.npz",
+      "cache_size_mb": 2.026
+    },
+    {
+      "subject_id": 26,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 2146001.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 8.784257543103449,
+          "anno_arousal_mean": 5.774753232758621
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1032126.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 7.646454650491046,
+          "anno_arousal_mean": 5.580500577700751
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.077089759797725,
+          "anno_arousal_mean": 2.8478841129372103
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 752001.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.192100249843848,
+          "anno_arousal_mean": 4.70107401623985
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1563876.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.0029176430048246,
+          "anno_arousal_mean": 3.9586250861474848
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.1852160136286205,
+          "anno_arousal_mean": 5.175832367972743
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1829001.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.58659923857868,
+          "anno_arousal_mean": 7.367503299492386
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 488251.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.3745906086956525,
+          "anno_arousal_mean": 6.582630608695653
+        }
+      },
+      "cache_file": "sub_26.npz",
+      "cache_size_mb": 2.065
+    },
+    {
+      "subject_id": 27,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1042293.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.056447467672415,
+          "anno_arousal_mean": 5.39734213362069
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1628001.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.641408145580589,
+          "anno_arousal_mean": 5.327614673599076
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.12642772861357,
+          "anno_arousal_mean": 2.6152300884955757
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.121115865084323,
+          "anno_arousal_mean": 3.854602435977514
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 460168.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.9656905582357,
+          "anno_arousal_mean": 3.928000689179876
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 2184834.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.690030323679728,
+          "anno_arousal_mean": 4.420428279386711
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 725293.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.2660220812182743,
+          "anno_arousal_mean": 6.85529847715736
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 1921084.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 3.083886608695652,
+          "anno_arousal_mean": 5.996100173913043
+        }
+      },
+      "cache_file": "sub_27.npz",
+      "cache_size_mb": 2.057
+    },
+    {
+      "subject_id": 28,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 2146001.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.197661907327586,
+          "anno_arousal_mean": 5.312396012931034
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 752001.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.692181398035818,
+          "anno_arousal_mean": 4.990414211438475
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1590334.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.652323640960809,
+          "anno_arousal_mean": 3.952436156763591
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1045084.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.736992816989382,
+          "anno_arousal_mean": 4.5293838226108685
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.052026878015162,
+          "anno_arousal_mean": 4.855495520330806
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 485251.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.522722316865417,
+          "anno_arousal_mean": 4.710827597955706
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 1829001.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.627740862944163,
+          "anno_arousal_mean": 7.180894162436548
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.067068521739131,
+          "anno_arousal_mean": 6.137951304347826
+        }
+      },
+      "cache_file": "sub_28.npz",
+      "cache_size_mb": 2.016
+    },
+    {
+      "subject_id": 29,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.534611530172414,
+          "anno_arousal_mean": 5.144891163793104
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 1894751.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.250967937608318,
+          "anno_arousal_mean": 5.0724381860196415
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 527084.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.0,
+          "anno_arousal_mean": 5.00755204382638
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1347876.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.115851030605871,
+          "anno_arousal_mean": 4.937682386008744
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1082751.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.393730530668504,
+          "anno_arousal_mean": 4.99261061337009
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 1628001.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.41447734241908,
+          "anno_arousal_mean": 5.057251107325384
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 765751.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.396068781725888,
+          "anno_arousal_mean": 5.472096446700508
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 2187834.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 4.431881739130435,
+          "anno_arousal_mean": 5.241064
+        }
+      },
+      "cache_file": "sub_29.npz",
+      "cache_size_mb": 2.034
+    },
+    {
+      "subject_id": 30,
+      "fs_target": 64,
+      "trials": {
+        "1": {
+          "status": "ok",
+          "t0_ms": 1829001.0,
+          "n_raw_samples": 185583,
+          "n_target_samples": 11878,
+          "duration_s": 185.594,
+          "n_anno_samples": 3712,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.645796336206897,
+          "anno_arousal_mean": 6.602339439655173
+        },
+        "2": {
+          "status": "ok",
+          "t0_ms": 752001.0,
+          "n_raw_samples": 173083,
+          "n_target_samples": 11078,
+          "duration_s": 173.094,
+          "n_anno_samples": 3462,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.661124783362218,
+          "anno_arousal_mean": 6.143790583477759
+        },
+        "3": {
+          "status": "ok",
+          "t0_ms": 1590334.0,
+          "n_raw_samples": 118667,
+          "n_target_samples": 7595,
+          "duration_s": 118.672,
+          "n_anno_samples": 2373,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.537589970501474,
+          "anno_arousal_mean": 4.7565600505689
+        },
+        "4": {
+          "status": "ok",
+          "t0_ms": 1045084.0,
+          "n_raw_samples": 160125,
+          "n_target_samples": 10248,
+          "duration_s": 160.125,
+          "n_anno_samples": 3202,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.093539975015615,
+          "anno_arousal_mean": 4.949534665833855
+        },
+        "5": {
+          "status": "ok",
+          "t0_ms": 1325209.0,
+          "n_raw_samples": 145125,
+          "n_target_samples": 9288,
+          "duration_s": 145.125,
+          "n_anno_samples": 2902,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 6.798174362508615,
+          "anno_arousal_mean": 4.3835196416264655
+        },
+        "6": {
+          "status": "ok",
+          "t0_ms": 221501.0,
+          "n_raw_samples": 146750,
+          "n_target_samples": 9392,
+          "duration_s": 146.75,
+          "n_anno_samples": 2935,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 5.017062010221466,
+          "anno_arousal_mean": 5.106682453151619
+        },
+        "7": {
+          "status": "ok",
+          "t0_ms": 2134584.0,
+          "n_raw_samples": 197000,
+          "n_target_samples": 12608,
+          "duration_s": 197.0,
+          "n_anno_samples": 3940,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 1.7719446700507613,
+          "anno_arousal_mean": 7.367204822335024
+        },
+        "8": {
+          "status": "ok",
+          "t0_ms": 488251.0,
+          "n_raw_samples": 143750,
+          "n_target_samples": 9200,
+          "duration_s": 143.75,
+          "n_anno_samples": 2875,
+          "nonfinite_fraction": {
+            "ecg": 0.0,
+            "bvp": 0.0,
+            "gsr": 0.0,
+            "rsp": 0.0,
+            "skt": 0.0,
+            "emg_zygo": 0.0,
+            "emg_coru": 0.0,
+            "emg_trap": 0.0
+          },
+          "anno_valence_mean": 2.9114786086956523,
+          "anno_arousal_mean": 6.473124869565217
+        }
+      },
+      "cache_file": "sub_30.npz",
+      "cache_size_mb": 2.055
+    }
+  ]
+}

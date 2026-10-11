@@ -1,0 +1,120 @@
+# Data configuration for the CASE reliability-gated fusion study.
+# All values here are VERIFIED against the official CASE README files shipped
+# inside CASE_full.zip. Set the paths below to your local extraction.
+
+dataset:
+  name: CASE
+  long_name: Continuously Annotated Signals of Emotion
+  archive: "d:/case/CASE_full.zip"
+  root: "d:/case/CASE_extracted/CASE_full"
+  # The official README recommends the interpolated variant for downstream
+  # analysis because per-video sample counts are consistent across participants.
+  variant: interpolated
+  physiological_dir: "d:/case/CASE_extracted/CASE_full/data/interpolated/physiological"
+  annotations_dir: "d:/case/CASE_extracted/CASE_full/data/interpolated/annotations"
+  metadata_dir: "d:/case/CASE_extracted/CASE_full/metadata"
+  n_participants_expected: 30
+
+sampling:
+  fs_physio_hz: 1000      # daqtime is in ms at 1 ms resolution
+  fs_annotation_hz: 20    # jstime is in ms at 50 ms resolution
+  fs_target_hz: 64        # common analysis grid after modality-specific processing
+
+annotation:
+  valence_col: valence
+  arousal_col: arousal
+  scale_min: 0.5
+  scale_max: 9.5
+  neutral_midpoint: 5.0   # documented centre of the [0.5, 9.5] joystick scale
+
+# Video-IDs verified from metadata/videos.xlsx.
+videos:
+  emotional_ids: [1, 2, 3, 4, 5, 6, 7, 8]
+  blue_screen_id: 11
+  start_video_id: 10
+  end_video_id: 12
+  labels:
+    1: amusing-1
+    2: amusing-2
+    3: boring-1
+    4: boring-2
+    5: relaxed-1
+    6: relaxed-2
+    7: scary-1
+    8: scary-2
+    10: startVid
+    11: bluVid
+    12: endVid
+
+# Eight physiological channels, each treated as one "modality" for the
+# missing-sensor experiments. Order here is canonical and must not change.
+modalities:
+  - name: ecg
+    column: ecg
+    unit: mV
+    kind: cardiac
+    # Upper edge kept below the 32 Hz Nyquist of the 64 Hz analysis grid so the
+    # retained band is honest; QRS energy and HR/HRV live well inside 0.5-30 Hz.
+    filter: {type: bandpass, low_hz: 0.5, high_hz: 30.0, order: 4}
+    envelope: false
+  - name: bvp
+    column: bvp
+    unit: percent
+    kind: cardiac
+    filter: {type: bandpass, low_hz: 0.5, high_hz: 8.0, order: 4}
+    envelope: false
+  - name: gsr
+    column: gsr
+    unit: microsiemens
+    kind: electrodermal
+    filter: {type: lowpass, high_hz: 5.0, order: 4}
+    envelope: false
+  - name: rsp
+    column: rsp
+    unit: percent
+    kind: respiration
+    filter: {type: lowpass, high_hz: 1.0, order: 4}
+    envelope: false
+  - name: skt
+    column: skt
+    unit: celsius
+    kind: temperature
+    filter: {type: lowpass, high_hz: 1.0, order: 4}
+    envelope: false
+  # sEMG: power lives at 20-450 Hz, which cannot survive decimation to 64 Hz.
+  # We therefore extract the linear envelope at the native 1000 Hz rate first.
+  - name: emg_zygo
+    column: emg_zygo
+    unit: microvolt
+    kind: semg
+    filter: {type: bandpass, low_hz: 20.0, high_hz: 450.0, order: 4}
+    envelope: true
+    envelope_method: rms   # sqrt(lowpass(x^2)) -- non-negative by construction
+    envelope_lowpass_hz: 8.0
+  - name: emg_coru
+    column: emg_coru
+    unit: microvolt
+    kind: semg
+    filter: {type: bandpass, low_hz: 20.0, high_hz: 450.0, order: 4}
+    envelope: true
+    envelope_method: rms   # sqrt(lowpass(x^2)) -- non-negative by construction
+    envelope_lowpass_hz: 8.0
+  - name: emg_trap
+    column: emg_trap
+    unit: microvolt
+    kind: semg
+    filter: {type: bandpass, low_hz: 20.0, high_hz: 450.0, order: 4}
+    envelope: true
+    envelope_method: rms   # sqrt(lowpass(x^2)) -- non-negative by construction
+    envelope_lowpass_hz: 8.0
+
+# A physically meaningful "wearable" subset: the channels obtainable from a
+# consumer wrist-worn device (e.g. PPG + EDA + skin temperature).
+wearable_subset: [bvp, gsr, skt]
+
+windowing:
+  window_seconds: 10.0
+  stride_seconds: 5.0
+  candidate_window_seconds: [5.0, 10.0, 20.0]   # validation-only sensitivity study
+  max_invalid_fraction: 0.20                     # windows above this are excluded
+  annotation_delay_candidates_s: [0.0, 1.0, 2.0, 3.0]

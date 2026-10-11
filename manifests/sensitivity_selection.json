@@ -1,0 +1,32 @@
+{
+  "selected_window_seconds": 20.0,
+  "selected_delay_seconds": 0.0,
+  "stride_seconds": 5.0,
+  "selection_basis": "Training + validation participants only (seed 13). No outer test fold was inspected before this configuration was frozen.",
+  "window_length_decision": {
+    "rule": "Choose the window length that scores best on validation participants.",
+    "evidence": "20 s outperformed 10 s and 5 s at EVERY delay candidate: all four 20 s configurations scored above every 10 s and 5 s configuration in the 3-fold sweep. The ordering 20 s > 10 s > 5 s was consistent, so the effect is treated as real.",
+    "decision": "window = 20 s",
+    "note": "Stride is held fixed at 5 s across all candidates so that every window length yields predictions at the same temporal resolution; overlap therefore varies (75% at 20 s, 50% at 10 s, 0% at 5 s). Because splits are grouped by participant, overlapping windows cannot cross the train/test boundary."
+  },
+  "annotation_delay_decision": {
+    "rule": "Pre-declared: if delay optimisation does not provide a STABLE improvement across validation folds, use zero shift and state this transparently.",
+    "evidence": "In the 3-fold sweep the delay optimum was inconsistent across window lengths (best at 1 s for 5 s windows, 2 s for 10 s windows, 3 s for 20 s windows), the signature of noise-chasing rather than a consistent physiological lag. A confirmation run at 20 s using ALL FIVE validation folds shrank the delay-3 advantage from +0.027 to +0.008 mean CCC (0.2411 +/- 0.0567 versus 0.2334 +/- 0.0521), an order of magnitude smaller than the fold-to-fold standard deviation.",
+    "decision": "delay = 0 s (no annotation shift)",
+    "transparency_note": "The 3-fold argmax would have selected a 3 s delay. It was rejected after the 5-fold confirmation showed the advantage was not stable. This is reported in the manuscript rather than silently adopting the larger number."
+  },
+  "confirmation_run": {
+    "folds": 5,
+    "seed": 13,
+    "delay_0s_val_mean_ccc": 0.2334,
+    "delay_0s_val_std": 0.0521,
+    "delay_3s_val_mean_ccc": 0.2411,
+    "delay_3s_val_std": 0.0567,
+    "difference": 0.0077,
+    "verdict": "not a stable improvement"
+  },
+  "artifacts": [
+    "results/sensitivity.csv",
+    "results/sensitivity_delay_confirm.csv"
+  ]
+}

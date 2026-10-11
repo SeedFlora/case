@@ -1,0 +1,101 @@
+{
+  "rule": "16 midpoint probes; coverage >= 0.999; existing signal-invalid exclusion preserved",
+  "candidates": [
+    {
+      "window_s": 5.0,
+      "delay_s": 0.0,
+      "base_windows": 7530,
+      "kept_windows": 7530,
+      "excluded_incomplete_coverage": 0,
+      "participants": 30
+    },
+    {
+      "window_s": 5.0,
+      "delay_s": 1.0,
+      "base_windows": 7530,
+      "kept_windows": 7440,
+      "excluded_incomplete_coverage": 90,
+      "participants": 30
+    },
+    {
+      "window_s": 5.0,
+      "delay_s": 2.0,
+      "base_windows": 7530,
+      "kept_windows": 7410,
+      "excluded_incomplete_coverage": 120,
+      "participants": 30
+    },
+    {
+      "window_s": 5.0,
+      "delay_s": 3.0,
+      "base_windows": 7530,
+      "kept_windows": 7380,
+      "excluded_incomplete_coverage": 150,
+      "participants": 30
+    },
+    {
+      "window_s": 10.0,
+      "delay_s": 0.0,
+      "base_windows": 7290,
+      "kept_windows": 7290,
+      "excluded_incomplete_coverage": 0,
+      "participants": 30
+    },
+    {
+      "window_s": 10.0,
+      "delay_s": 1.0,
+      "base_windows": 7290,
+      "kept_windows": 7200,
+      "excluded_incomplete_coverage": 90,
+      "participants": 30
+    },
+    {
+      "window_s": 10.0,
+      "delay_s": 2.0,
+      "base_windows": 7290,
+      "kept_windows": 7200,
+      "excluded_incomplete_coverage": 90,
+      "participants": 30
+    },
+    {
+      "window_s": 10.0,
+      "delay_s": 3.0,
+      "base_windows": 7290,
+      "kept_windows": 7140,
+      "excluded_incomplete_coverage": 150,
+      "participants": 30
+    },
+    {
+      "window_s": 20.0,
+      "delay_s": 0.0,
+      "base_windows": 6810,
+      "kept_windows": 6810,
+      "excluded_incomplete_coverage": 0,
+      "participants": 30
+    },
+    {
+      "window_s": 20.0,
+      "delay_s": 1.0,
+      "base_windows": 6810,
+      "kept_windows": 6750,
+      "excluded_incomplete_coverage": 60,
+      "participants": 30
+    },
+    {
+      "window_s": 20.0,
+      "delay_s": 2.0,
+      "base_windows": 6810,
+      "kept_windows": 6720,
+      "excluded_incomplete_coverage": 90,
+      "participants": 30
+    },
+    {
+      "window_s": 20.0,
+      "delay_s": 3.0,
+      "base_windows": 6810,
+      "kept_windows": 6660,
+      "excluded_incomplete_coverage": 150,
+      "participants": 30
+    }
+  ]
+}

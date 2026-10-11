@@ -1,0 +1,82 @@
+{
+  "tag": "w10_d0",
+  "window_seconds": 10.0,
+  "stride_seconds": 5.0,
+  "delay_seconds": 0.0,
+  "fs_hz": 64,
+  "samples_per_window": 640,
+  "n_windows_built": 7290,
+  "n_windows_excluded": 0,
+  "n_windows_kept": 7290,
+  "exclusion_reasons": {
+    "invalid_fraction_gt_threshold": 0,
+    "incomplete_annotation_coverage": 0
+  },
+  "max_invalid_fraction_threshold": 0.2,
+  "n_subjects": 30,
+  "n_trials": 240,
+  "windows_per_subject": {
+    "count": 30.0,
+    "mean": 243.0,
+    "std": 0.0,
+    "min": 243.0,
+    "25%": 243.0,
+    "50%": 243.0,
+    "75%": 243.0,
+    "max": 243.0
+  },
+  "modalities": [
+    "ecg",
+    "bvp",
+    "gsr",
+    "rsp",
+    "skt",
+    "emg_zygo",
+    "emg_coru",
+    "emg_trap"
+  ],
+  "quality_features": [
+    "finite_ratio",
+    "flatline_ratio",
+    "saturation_ratio",
+    "log_variance",
+    "mad",
+    "mean_abs_derivative",
+    "outlier_ratio",
+    "hf_ratio",
+    "spectral_entropy",
+    "deriv_zero_crossing_rate"
+  ],
+  "shapes": {
+    "X": [
+      7290,
+      8,
+      640
+    ],
+    "Q": [
+      7290,
+      8,
+      10
+    ],
+    "y": [
+      7290,
+      2
+    ]
+  },
+  "valence_stats": {
+    "mean": 5.224874496459961,
+    "std": 1.6572808027267456,
+    "min": 0.5,
+    "max": 9.5
+  },
+  "arousal_stats": {
+    "mean": 5.296865940093994,
+    "std": 1.5382479429244995,
+    "min": 0.504812479019165,
+    "max": 9.5
+  },
+  "size_mb": {
+    "X": 142.38,
+    "Q": 2.22
+  }
+}

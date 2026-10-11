@@ -1,0 +1,14 @@
+# Versions are those actually used for the reported runs (see
+# manifests/environment.json and results/experiment_manifest.json).
+numpy==2.4.6
+scipy==1.17.1
+pandas==2.3.3
+pyarrow==24.0.0
+scikit-learn==1.9.0
+lightgbm==4.6.0
+torch==2.11.0
+matplotlib==3.11.0
+statsmodels==0.14.6
+PyYAML==6.0.3
+openpyxl>=3.1
+pytest>=8.0

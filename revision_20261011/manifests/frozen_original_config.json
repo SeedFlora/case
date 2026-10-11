@@ -1,0 +1,335 @@
+{
+  "data": {
+    "dataset": {
+      "name": "CASE",
+      "long_name": "Continuously Annotated Signals of Emotion",
+      "archive": "d:/case/CASE_full.zip",
+      "root": "d:/case/CASE_extracted/CASE_full",
+      "variant": "interpolated",
+      "physiological_dir": "d:/case/CASE_extracted/CASE_full/data/interpolated/physiological",
+      "annotations_dir": "d:/case/CASE_extracted/CASE_full/data/interpolated/annotations",
+      "metadata_dir": "d:/case/CASE_extracted/CASE_full/metadata",
+      "n_participants_expected": 30
+    },
+    "sampling": {
+      "fs_physio_hz": 1000,
+      "fs_annotation_hz": 20,
+      "fs_target_hz": 64
+    },
+    "annotation": {
+      "valence_col": "valence",
+      "arousal_col": "arousal",
+      "scale_min": 0.5,
+      "scale_max": 9.5,
+      "neutral_midpoint": 5.0
+    },
+    "videos": {
+      "emotional_ids": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "blue_screen_id": 11,
+      "start_video_id": 10,
+      "end_video_id": 12,
+      "labels": {
+        "1": "amusing-1",
+        "2": "amusing-2",
+        "3": "boring-1",
+        "4": "boring-2",
+        "5": "relaxed-1",
+        "6": "relaxed-2",
+        "7": "scary-1",
+        "8": "scary-2",
+        "10": "startVid",
+        "11": "bluVid",
+        "12": "endVid"
+      }
+    },
+    "modalities": [
+      {
+        "name": "ecg",
+        "column": "ecg",
+        "unit": "mV",
+        "kind": "cardiac",
+        "filter": {
+          "type": "bandpass",
+          "low_hz": 0.5,
+          "high_hz": 30.0,
+          "order": 4
+        },
+        "envelope": false
+      },
+      {
+        "name": "bvp",
+        "column": "bvp",
+        "unit": "percent",
+        "kind": "cardiac",
+        "filter": {
+          "type": "bandpass",
+          "low_hz": 0.5,
+          "high_hz": 8.0,
+          "order": 4
+        },
+        "envelope": false
+      },
+      {
+        "name": "gsr",
+        "column": "gsr",
+        "unit": "microsiemens",
+        "kind": "electrodermal",
+        "filter": {
+          "type": "lowpass",
+          "high_hz": 5.0,
+          "order": 4
+        },
+        "envelope": false
+      },
+      {
+        "name": "rsp",
+        "column": "rsp",
+        "unit": "percent",
+        "kind": "respiration",
+        "filter": {
+          "type": "lowpass",
+          "high_hz": 1.0,
+          "order": 4
+        },
+        "envelope": false
+      },
+      {
+        "name": "skt",
+        "column": "skt",
+        "unit": "celsius",
+        "kind": "temperature",
+        "filter": {
+          "type": "lowpass",
+          "high_hz": 1.0,
+          "order": 4
+        },
+        "envelope": false
+      },
+      {
+        "name": "emg_zygo",
+        "column": "emg_zygo",
+        "unit": "microvolt",
+        "kind": "semg",
+        "filter": {
+          "type": "bandpass",
+          "low_hz": 20.0,
+          "high_hz": 450.0,
+          "order": 4
+        },
+        "envelope": true,
+        "envelope_method": "rms",
+        "envelope_lowpass_hz": 8.0
+      },
+      {
+        "name": "emg_coru",
+        "column": "emg_coru",
+        "unit": "microvolt",
+        "kind": "semg",
+        "filter": {
+          "type": "bandpass",
+          "low_hz": 20.0,
+          "high_hz": 450.0,
+          "order": 4
+        },
+        "envelope": true,
+        "envelope_method": "rms",
+        "envelope_lowpass_hz": 8.0
+      },
+      {
+        "name": "emg_trap",
+        "column": "emg_trap",
+        "unit": "microvolt",
+        "kind": "semg",
+        "filter": {
+          "type": "bandpass",
+          "low_hz": 20.0,
+          "high_hz": 450.0,
+          "order": 4
+        },
+        "envelope": true,
+        "envelope_method": "rms",
+        "envelope_lowpass_hz": 8.0
+      }
+    ],
+    "wearable_subset": [
+      "bvp",
+      "gsr",
+      "skt"
+    ],
+    "windowing": {
+      "window_seconds": 10.0,
+      "stride_seconds": 5.0,
+      "candidate_window_seconds": [
+        5.0,
+        10.0,
+        20.0
+      ],
+      "max_invalid_fraction": 0.2,
+      "annotation_delay_candidates_s": [
+        0.0,
+        1.0,
+        2.0,
+        3.0
+      ]
+    }
+  },
+  "experiment": {
+    "seeds": [
+      13,
+      42,
+      2026
+    ],
+    "protocol": {
+      "name": "repeated_grouped_kfold",
+      "n_folds": 5,
+      "group_by": "participant",
+      "inner_validation": {
+        "kind": "grouped_holdout",
+        "val_participant_fraction": 0.25
+      }
+    },
+    "metrics": {
+      "primary": [
+        "ccc",
+        "mae",
+        "rmse"
+      ],
+      "selection_score": "mean_ccc",
+      "targets": [
+        "valence",
+        "arousal"
+      ],
+      "aggregation_primary": "participant"
+    },
+    "models": {
+      "naive": {
+        "enabled": true
+      },
+      "ridge": {
+        "enabled": true,
+        "alphas": [
+          1.0,
+          10.0,
+          100.0,
+          1000.0
+        ]
+      },
+      "lightgbm": {
+        "enabled": true,
+        "n_estimators": 400,
+        "learning_rate": 0.05,
+        "num_leaves": 31,
+        "min_child_samples": 40,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8
+      },
+      "early_fusion": {
+        "enabled": true,
+        "channels": 96,
+        "depth": 4,
+        "dropout": 0.2
+      },
+      "late_fusion": {
+        "enabled": true,
+        "enc_channels": 32,
+        "depth": 4,
+        "dropout": 0.2
+      },
+      "reliability_gated": {
+        "enabled": true,
+        "enc_channels": 32,
+        "depth": 4,
+        "dropout": 0.2,
+        "gate_hidden": 16,
+        "modality_dropout_candidates": [
+          0.1,
+          0.2,
+          0.3
+        ]
+      }
+    },
+    "training": {
+      "framework": "pytorch",
+      "optimizer": "adamw",
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "batch_size": 128,
+      "max_epochs": 60,
+      "patience": 12,
+      "grad_clip": 1.0,
+      "scheduler": "cosine",
+      "amp": true,
+      "loss": {
+        "lambda_mae": 0.5,
+        "lambda_ccc": 0.5,
+        "candidates": [
+          {
+            "lambda_mae": 1.0,
+            "lambda_ccc": 0.0
+          },
+          {
+            "lambda_mae": 0.5,
+            "lambda_ccc": 0.5
+          },
+          {
+            "lambda_mae": 0.2,
+            "lambda_ccc": 0.8
+          }
+        ]
+      }
+    },
+    "robustness": {
+      "corruption_seed": 777,
+      "missing_modality": {
+        "n_missing_levels": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "n_random_draws": 5,
+        "per_modality_ablation": true,
+        "wearable_subset_only": true
+      },
+      "corruption": {
+        "types": [
+          "gaussian_noise",
+          "flatline",
+          "sample_dropout",
+          "clipping",
+          "impulse"
+        ],
+        "severities": [
+          0.25,
+          0.5,
+          1.0
+        ]
+      }
+    },
+    "ablations": [
+      "full",
+      "no_quality",
+      "no_modality_dropout",
+      "equal_weights",
+      "wearable_subset"
+    ],
+    "statistics": {
+      "test": "wilcoxon_signed_rank",
+      "correction": "holm",
+      "effect_size": "rank_biserial",
+      "bootstrap": {
+        "n_resamples": 10000,
+        "ci": 0.95
+      }
+    }
+  }
+}

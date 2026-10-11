@@ -1,0 +1,52 @@
+# Original working copies, datasets and conference templates
+/CASE_extracted/
+/case_reliability_fusion_icot2026/
+/SeedFlora-case/
+/template_work/
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Manuscripts, reviews, supplements and publication artifacts
+paper/
+*.pdf
+*.doc
+*.docx
+*.tex
+*.bib
+*.cls
+*.aux
+*.out
+*.bbl
+*.blg
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# Rebuilt experiment files
+cache/
+checkpoints/
+logs/
+qa/
+deliverables/
+/revision_rerun/
+*.npz
+*.npy
+*.pt
+*.pth
+*.log
+
+# Python environments and local credentials
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+*.pem
+*.key

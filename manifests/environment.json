@@ -1,0 +1,26 @@
+{
+  "python_version": "3.13.5",
+  "python_executable": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "cpu_count_logical": 20,
+  "ram_total_gb": 31.73,
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "sklearn": "1.9.0",
+    "torch": "2.11.0+cu128",
+    "lightgbm": "4.6.0",
+    "pyarrow": "24.0.0",
+    "matplotlib": "3.11.0",
+    "statsmodels": "0.14.6",
+    "yaml": "6.0.3"
+  },
+  "torch_cuda_available": true,
+  "torch_cuda_version": "12.8",
+  "gpu_name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "gpu_total_memory_gb": 8.0,
+  "git_commit": null
+}

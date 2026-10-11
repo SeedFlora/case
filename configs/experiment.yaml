@@ -1,0 +1,101 @@
+# Experiment configuration. Every number reported in the paper traces back to a
+# run configured by this file plus configs/data.yaml.
+
+seeds: [13, 42, 2026]
+
+protocol:
+  name: repeated_grouped_kfold
+  n_folds: 5
+  group_by: participant
+  # 3 seeds x 5 folds = 15 outer test folds
+  inner_validation:
+    kind: grouped_holdout
+    val_participant_fraction: 0.25
+
+metrics:
+  primary: [ccc, mae, rmse]
+  selection_score: mean_ccc      # (CCC_valence + CCC_arousal) / 2
+  targets: [valence, arousal]
+  aggregation_primary: participant   # average per participant, then across participants
+
+models:
+  naive:
+    enabled: true
+  ridge:
+    enabled: true
+    alphas: [1.0, 10.0, 100.0, 1000.0]
+  lightgbm:
+    enabled: true
+    n_estimators: 400
+    learning_rate: 0.05
+    num_leaves: 31
+    min_child_samples: 40
+    subsample: 0.8
+    colsample_bytree: 0.8
+  # Channel widths are chosen so that early fusion (one wide encoder over all
+  # 8 channels) and late/gated fusion (8 narrow per-modality encoders) land at
+  # comparable parameter counts; the exact counts are recorded per run.
+  early_fusion:
+    enabled: true
+    channels: 96
+    depth: 4
+    dropout: 0.2
+  late_fusion:
+    enabled: true
+    enc_channels: 32
+    depth: 4
+    dropout: 0.2
+  reliability_gated:
+    enabled: true
+    enc_channels: 32
+    depth: 4
+    dropout: 0.2
+    gate_hidden: 16
+    modality_dropout_candidates: [0.10, 0.20, 0.30]
+
+training:
+  framework: pytorch
+  optimizer: adamw
+  lr: 0.001
+  weight_decay: 0.0001
+  batch_size: 128
+  max_epochs: 60
+  patience: 12
+  grad_clip: 1.0
+  scheduler: cosine
+  amp: true
+  loss:
+    # L = lambda_mae * SmoothL1 + lambda_ccc * (1 - CCC); weights frozen after
+    # a validation-only sweep (see reports/experiment_report.md).
+    lambda_mae: 0.5
+    lambda_ccc: 0.5
+    candidates:
+      - {lambda_mae: 1.0, lambda_ccc: 0.0}
+      - {lambda_mae: 0.5, lambda_ccc: 0.5}
+      - {lambda_mae: 0.2, lambda_ccc: 0.8}
+
+robustness:
+  corruption_seed: 777
+  missing_modality:
+    n_missing_levels: [0, 1, 2, 4]
+    n_random_draws: 5          # random modality subsets per level, fixed seed
+    per_modality_ablation: true
+    wearable_subset_only: true
+  corruption:
+    types: [gaussian_noise, flatline, sample_dropout, clipping, impulse]
+    severities: [0.25, 0.50, 1.00]   # interpreted per-type, see src/corruption.py
+
+ablations:
+  - full                    # reliability-gated, quality indicators, modality dropout
+  - no_quality              # gates driven by a constant instead of quality vector
+  - no_modality_dropout     # trained without random modality dropout
+  - equal_weights           # fixed equal gates (no learned gating)
+  - wearable_subset         # only bvp, gsr, skt available
+
+statistics:
+  test: wilcoxon_signed_rank
+  correction: holm
+  effect_size: rank_biserial
+  bootstrap:
+    n_resamples: 10000
+    ci: 0.95

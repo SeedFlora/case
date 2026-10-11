@@ -1,0 +1,17 @@
+{
+  "shared_initialization_late_fusion": true,
+  "shared_initialization_reliability_gated": true,
+  "shared_initialization_abl_no_quality": true,
+  "shared_initialization_abl_no_moddropout": true,
+  "shared_initialization_abl_equal_weights": true,
+  "equal_late_forward_identical": true,
+  "quality_channel_subset_equivalent": true,
+  "features_channel_subset_equivalent": true,
+  "zero_delay_label_equivalence_w5": true,
+  "zero_delay_no_new_exclusions_w5": true,
+  "zero_delay_label_equivalence_w10": true,
+  "zero_delay_no_new_exclusions_w10": true,
+  "zero_delay_label_equivalence_w20": true,
+  "zero_delay_no_new_exclusions_w20": true,
+  "all_passed": true
+}

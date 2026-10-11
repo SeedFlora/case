@@ -1,0 +1,122 @@
+CASE reliability fusion: nested experiment reproduction
+Revision of 11 October 2026
+
+Repository: https://github.com/SeedFlora/case
+Run commands from the repository root containing src/ and revision_20261011/.
+No software license has been chosen; see LICENSE_NOTES.md.
+
+Contents and environment
+The original non-nested pipeline and historical results remain in root src/,
+configs/, tests/, results/ and manifests/. revision_20261011/ contains nested
+code, analysis, combined and per-fold results, held-out predictions and
+selection/run/validation records. Per-fold files support metric recomputation
+and checks of fold membership, selection and paired conditions. Raw recordings,
+signal caches, checkpoints and run logs are excluded.
+
+The archived environment used Python 3.13.5, torch 2.11.0+cu128, CUDA 12.8 and
+an RTX 3070 Ti Laptop GPU on Windows 11. Install a compatible PyTorch build,
+then requirements.txt, or use environment.yml. Recorded versions and source
+hashes are in this revision's results/experiment_manifest.json. Bitwise identity
+across GPUs, drivers and libraries is not guaranteed; training uses mixed
+precision. Preserve line endings for source-hash checks:
+   git clone -c core.autocrlf=false https://github.com/SeedFlora/case.git
+
+Check archived results (no raw data, caches or GPU needed)
+   python revision_20261011/analysis/reanalyse_existing_results.py
+   python revision_20261011/analysis/reanalyse_existing_results.py --subject-metrics revision_20261011/results/subject_metrics.csv --out-dir revision_20261011/analysis/nested --analysis-origin retrospective
+   python revision_20261011/analysis/verify_predictions.py
+The first command regenerates historical statistics from root
+results/subject_metrics.csv. The second regenerates nested statistics. The
+third independently recomputes participant CCC and MAE from all 15 prediction
+files and checks finite values and identical windows/targets across models and
+conditions. It writes this revision's manifests/prediction_validation.json.
+These commands overwrite regenerated analysis/verification files; preserve an
+unchanged copy if required. Absolute paths in analysis metadata can differ
+between computers.
+
+Data and cache setup (needed for training)
+Obtain CASE_Dataset-full at https://doi.org/10.6084/m9.figshare.8869157.v1
+(CC0 1.0). CASE_full.zip is 4,553,720,945 bytes, MD5
+5e679ce69d6602c5f8225f03c489df76. The data descriptor is Sharma et al.,
+Scientific Data 6:196 (2019), https://doi.org/10.1038/s41597-019-0209-0.
+See DATASET_CARD.md and LICENSE_NOTES.md for source and attribution details.
+1. Download, verify and extract CASE_full.zip.
+2. Configure archive, root, physiological_dir, annotations_dir and metadata_dir
+   in configs/data.yaml. Saved paths refer to D:/case. Use the extracted
+   data/interpolated/physiological and data/interpolated/annotations folders.
+3. Build all three root window caches:
+   python src/preprocess.py
+   python src/windowing.py --windows 5 10 20 --delays 0
+   These write cache/preprocessed/, cache/windows/ and preprocessing/window
+   manifests. Raw files are read without modification.
+
+Nested protocol
+Seeds 13, 42 and 2026 each define five participant-grouped outer folds, giving
+15 folds with 18 training, six validation and six test participants each. The
+driver reads root results/experiment_manifest.json and verifies that these
+exact folds match regenerated folds; preserve that original manifest.
+Each fold selects among 12 combinations of window length (5, 10 or 20 seconds)
+and annotation delay (0, 1, 2 or 3 seconds), using only training and validation
+participants. The quality gate with dropout (G+D, rate 0.2) drives selection by
+pooled validation mean CCC. Its winning checkpoint is reused for evaluation.
+Eight other models are fitted at that setting. All nine models are evaluated
+on the same 55 clean, missing-sensor, wearable and synthetic-corruption
+conditions. Held-out predictions are saved per fold.
+
+Architectures, loss weights and dropout were fixed during earlier development
+on the same participants and are not selected anew within these folds.
+configs/experiment.yaml describes an earlier validation-only loss-weight
+sweep, but no record of that sweep was archived. This analysis is retrospective.
+
+Fresh retraining
+Use a new sibling folder containing only revision src/ and analysis Python
+files. Copying archived completion markers would make the driver skip folds.
+Root src/, configs/, original fold manifest and rebuilt caches stay in place.
+revision_rerun must not exist yet.
+
+PowerShell:
+   if (Test-Path -LiteralPath revision_rerun) { throw 'revision_rerun already exists' }
+   New-Item -ItemType Directory -Path revision_rerun/src, revision_rerun/analysis
+   Copy-Item revision_20261011/src/*.py revision_rerun/src/
+   Copy-Item revision_20261011/analysis/*.py revision_rerun/analysis/
+
+Bash:
+   mkdir revision_rerun
+   mkdir revision_rerun/src revision_rerun/analysis
+   cp revision_20261011/src/*.py revision_rerun/src/
+   cp revision_20261011/analysis/*.py revision_rerun/analysis/
+
+Then:
+   python revision_rerun/src/validate_nested_implementation.py
+   python revision_rerun/src/nested_reanalysis.py
+   python revision_rerun/analysis/reanalyse_existing_results.py --subject-metrics revision_rerun/results/subject_metrics.csv --out-dir revision_rerun/analysis/nested --analysis-origin retrospective
+   python revision_rerun/analysis/verify_predictions.py
+   python revision_rerun/analysis/verify_nested_artifacts.py
+
+Outputs are located relative to copied scripts and stay in revision_rerun/.
+Implementation validation checks matched initialization, equal-weight fusion,
+subset quality/features and zero-delay labels. The driver creates caches,
+checkpoints, manifests and results. The final two scripts check saved
+predictions and complete experiment structure respectively.
+verify_nested_artifacts.py requires every candidate/model checkpoint, which
+is excluded from the archive. Run it after retraining; the archived audit is
+revision_20261011/manifests/artifact_validation.json.
+
+To resume an interrupted rerun, execute its nested_reanalysis.py again. It
+skips folds with completion markers and rewrites shared manifests and combined
+results. Do not use the training driver to check an unchanged archive.
+Optional disjoint workers use --prebuild-only, then --worker --worker-tag and
+--fold-name, followed by --aggregate-only. Divide the 15 folds without overlap.
+The reference nested run took about 81 minutes of wall time using two workers;
+runtime depends on hardware.
+
+Statistical interpretation
+Participant metrics average three outer-seed repetitions and fixed fault draws
+within a family before pairing. Holm correction covers six condition families.
+Bootstrap intervals are pointwise and conditional on fitted folds; they do not
+account for all cross-validation/training dependence or shared stimulus clips.
+Nonsignificance does not establish equivalence. This is neither preregistered
+analysis nor independent confirmation on new participants. Historical and
+nested estimates are kept separately. Synthetic faults do not establish
+hardware reliability, shared clips do not test unseen-stimulus generalization,
+and self-reported affect is not a clinical measure.

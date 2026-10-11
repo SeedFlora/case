@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "n_folds": 15,
+  "n_models": 9,
+  "n_named_conditions": 55,
+  "n_candidates": 180,
+  "n_neural_fits": 255,
+  "n_prediction_files": 15,
+  "n_predictions": 10092060,
+  "row_counts": {
+    "fold_metrics": 135,
+    "robustness_metrics": 7425,
+    "subject_metrics": 44550,
+    "gate_diagnostics": 39600
+  },
+  "max_normalized_gate_sum_error": 5.215406418956903e-07,
+  "checks": [
+    "original exact outer splits and disjoint train/validation/test",
+    "all 12 candidate settings and maximum validation selection",
+    "no outer metrics used for selection",
+    "all 60-epoch/patience-12 budgets retained",
+    "selected candidate checkpoint reused and all checkpoints present",
+    "complete nine-model by 55-condition catalogue",
+    "30 participants with three repeated outer tests per scenario",
+    "finite saved outcome metrics and complete parquet row counts",
+    "valid gate normalization, availability and matched healthy raw deltas",
+    "manifest source and configuration fingerprints"
+  ]
+}

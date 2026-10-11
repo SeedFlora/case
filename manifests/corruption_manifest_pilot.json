@@ -1,0 +1,68 @@
+[
+  {
+    "condition": "clean",
+    "family": "clean",
+    "level": 0.0,
+    "seed": 777,
+    "missing": [],
+    "corrupt": null
+  },
+  {
+    "condition": "missing1_d0",
+    "family": "missing_random",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [
+      2
+    ],
+    "missing_names": [
+      "gsr"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing4_d0",
+    "family": "missing_random",
+    "level": 4.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [
+      0,
+      2,
+      5,
+      6
+    ],
+    "missing_names": [
+      "ecg",
+      "gsr",
+      "emg_zygo",
+      "emg_coru"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "gaussian_noise_s1_d0",
+    "family": "corrupt_gaussian_noise",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "gaussian_noise",
+      "severity": 1.0,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  }
+]

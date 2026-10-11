@@ -1,0 +1,1188 @@
+{
+  "files": [
+    {
+      "relpath": "data/initial/README_initialData.txt",
+      "size_bytes": 2527,
+      "size_mb": 0.002,
+      "suffix": ".txt",
+      "sha256": "41c1c063c56fb51d7ee021d985c1acb3962379a1962a5582dc00b04fef92122c",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/interpolated/annotations/README_annotations.txt",
+      "size_bytes": 1854,
+      "size_mb": 0.002,
+      "suffix": ".txt",
+      "sha256": "5cef417660f4e22b76ace83182a414c0e18d53b6904769c7db559f6fd4126a15",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_1.csv",
+      "size_bytes": 883445,
+      "size_mb": 0.843,
+      "suffix": ".csv",
+      "sha256": "b4a7e3c8c34b64c8e0020294ec1c7e8f5d0502b365566cda1e7a60e114643848",
+      "subject_id": 1
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_10.csv",
+      "size_bytes": 888960,
+      "size_mb": 0.848,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 10
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_11.csv",
+      "size_bytes": 894998,
+      "size_mb": 0.854,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 11
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_12.csv",
+      "size_bytes": 872838,
+      "size_mb": 0.832,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 12
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_13.csv",
+      "size_bytes": 880118,
+      "size_mb": 0.839,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 13
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_14.csv",
+      "size_bytes": 861128,
+      "size_mb": 0.821,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 14
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_15.csv",
+      "size_bytes": 915616,
+      "size_mb": 0.873,
+      "suffix": ".csv",
+      "sha256": "55e8282dd5d7b6689ab49e3c7df47e0f3ed1cf06398f83420e4863e90481f30a",
+      "subject_id": 15
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_16.csv",
+      "size_bytes": 854494,
+      "size_mb": 0.815,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 16
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_17.csv",
+      "size_bytes": 907861,
+      "size_mb": 0.866,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 17
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_18.csv",
+      "size_bytes": 884574,
+      "size_mb": 0.844,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 18
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_19.csv",
+      "size_bytes": 820222,
+      "size_mb": 0.782,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 19
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_2.csv",
+      "size_bytes": 871749,
+      "size_mb": 0.831,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 2
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_20.csv",
+      "size_bytes": 897328,
+      "size_mb": 0.856,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 20
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_21.csv",
+      "size_bytes": 882335,
+      "size_mb": 0.841,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 21
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_22.csv",
+      "size_bytes": 871694,
+      "size_mb": 0.831,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 22
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_23.csv",
+      "size_bytes": 873658,
+      "size_mb": 0.833,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 23
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_24.csv",
+      "size_bytes": 856609,
+      "size_mb": 0.817,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 24
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_25.csv",
+      "size_bytes": 877691,
+      "size_mb": 0.837,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 25
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_26.csv",
+      "size_bytes": 904956,
+      "size_mb": 0.863,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 26
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_27.csv",
+      "size_bytes": 920004,
+      "size_mb": 0.877,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 27
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_28.csv",
+      "size_bytes": 846352,
+      "size_mb": 0.807,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 28
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_29.csv",
+      "size_bytes": 821070,
+      "size_mb": 0.783,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 29
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_3.csv",
+      "size_bytes": 887467,
+      "size_mb": 0.846,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 3
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_30.csv",
+      "size_bytes": 913885,
+      "size_mb": 0.872,
+      "suffix": ".csv",
+      "sha256": "490ebc6c4b522bc24e889b68f495748f157e2eac98e1c492023ad1dee5779c78",
+      "subject_id": 30
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_4.csv",
+      "size_bytes": 888885,
+      "size_mb": 0.848,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 4
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_5.csv",
+      "size_bytes": 899684,
+      "size_mb": 0.858,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 5
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_6.csv",
+      "size_bytes": 880134,
+      "size_mb": 0.839,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 6
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_7.csv",
+      "size_bytes": 855824,
+      "size_mb": 0.816,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 7
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_8.csv",
+      "size_bytes": 889229,
+      "size_mb": 0.848,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 8
+    },
+    {
+      "relpath": "data/interpolated/annotations/sub_9.csv",
+      "size_bytes": 885879,
+      "size_mb": 0.845,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 9
+    },
+    {
+      "relpath": "data/interpolated/physiological/README_physiological.txt",
+      "size_bytes": 2849,
+      "size_mb": 0.003,
+      "suffix": ".txt",
+      "sha256": "34256fcbf5c85d74d01b0b63252754fb3d75bcfc4178bb35f8dadb2ed9ae9a95",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_1.csv",
+      "size_bytes": 148106599,
+      "size_mb": 141.245,
+      "suffix": ".csv",
+      "sha256": "5f8b631da56f772d9407b5e327a3ce34013bd6268a2f2f3ae948be1dd694d6ba",
+      "subject_id": 1
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_10.csv",
+      "size_bytes": 152733271,
+      "size_mb": 145.658,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 10
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_11.csv",
+      "size_bytes": 150113432,
+      "size_mb": 143.159,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 11
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_12.csv",
+      "size_bytes": 151042134,
+      "size_mb": 144.045,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 12
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_13.csv",
+      "size_bytes": 151186435,
+      "size_mb": 144.183,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 13
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_14.csv",
+      "size_bytes": 152625278,
+      "size_mb": 145.555,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 14
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_15.csv",
+      "size_bytes": 150105343,
+      "size_mb": 143.152,
+      "suffix": ".csv",
+      "sha256": "42a27c26ad2dcf31058c43156be2dc8d134418e40e6c42038f25bf14609f22f3",
+      "subject_id": 15
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_16.csv",
+      "size_bytes": 149953786,
+      "size_mb": 143.007,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 16
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_17.csv",
+      "size_bytes": 150902662,
+      "size_mb": 143.912,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 17
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_18.csv",
+      "size_bytes": 150195746,
+      "size_mb": 143.238,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 18
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_19.csv",
+      "size_bytes": 150324756,
+      "size_mb": 143.361,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 19
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_2.csv",
+      "size_bytes": 154961679,
+      "size_mb": 147.783,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 2
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_20.csv",
+      "size_bytes": 150438073,
+      "size_mb": 143.469,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 20
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_21.csv",
+      "size_bytes": 150082154,
+      "size_mb": 143.129,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 21
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_22.csv",
+      "size_bytes": 149493431,
+      "size_mb": 142.568,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 22
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_23.csv",
+      "size_bytes": 152311766,
+      "size_mb": 145.256,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 23
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_24.csv",
+      "size_bytes": 148677074,
+      "size_mb": 141.79,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 24
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_25.csv",
+      "size_bytes": 149246902,
+      "size_mb": 142.333,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 25
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_26.csv",
+      "size_bytes": 150783004,
+      "size_mb": 143.798,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 26
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_27.csv",
+      "size_bytes": 152339769,
+      "size_mb": 145.283,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 27
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_28.csv",
+      "size_bytes": 149976306,
+      "size_mb": 143.029,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 28
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_29.csv",
+      "size_bytes": 150174627,
+      "size_mb": 143.218,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 29
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_3.csv",
+      "size_bytes": 151038834,
+      "size_mb": 144.042,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 3
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_30.csv",
+      "size_bytes": 150706670,
+      "size_mb": 143.725,
+      "suffix": ".csv",
+      "sha256": "59f3acdc12f108cc9805c041ca36c3bd9568236a5045170b6f9e49e6ee7102d4",
+      "subject_id": 30
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_4.csv",
+      "size_bytes": 151587019,
+      "size_mb": 144.565,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 4
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_5.csv",
+      "size_bytes": 151507313,
+      "size_mb": 144.489,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 5
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_6.csv",
+      "size_bytes": 149704355,
+      "size_mb": 142.769,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 6
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_7.csv",
+      "size_bytes": 153698400,
+      "size_mb": 146.578,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 7
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_8.csv",
+      "size_bytes": 152938527,
+      "size_mb": 145.854,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 8
+    },
+    {
+      "relpath": "data/interpolated/physiological/sub_9.csv",
+      "size_bytes": 152135597,
+      "size_mb": 145.088,
+      "suffix": ".csv",
+      "sha256": null,
+      "subject_id": 9
+    },
+    {
+      "relpath": "data/interpolated/README_interpolated.txt",
+      "size_bytes": 2149,
+      "size_mb": 0.002,
+      "suffix": ".txt",
+      "sha256": "860fdeb01609c01e4c9875378886d88452306f5d4c77dc26bb8027fb261b63c4",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/non-interpolated/annotations/README_annotations.txt",
+      "size_bytes": 1870,
+      "size_mb": 0.002,
+      "suffix": ".txt",
+      "sha256": "9dbbbea71821aaa1679ab2e1c6a39525850c789725fea37477775599c3d09134",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/non-interpolated/physiological/README_physiological.txt",
+      "size_bytes": 2863,
+      "size_mb": 0.003,
+      "suffix": ".txt",
+      "sha256": "45b0d5a1349ae587392eef4e847b5e9b1af8f87eb4cbf4dd251baa0576ddf198",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/non-interpolated/README_noninterpolated.txt",
+      "size_bytes": 2020,
+      "size_mb": 0.002,
+      "suffix": ".txt",
+      "sha256": "c88af9a6b6aa04991322c66b73ed18f0ff447ba1503a694ed1d4c2924032347c",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/raw/annotations/README_annotations.txt",
+      "size_bytes": 1154,
+      "size_mb": 0.001,
+      "suffix": ".txt",
+      "sha256": "05d955f38655c1e7f51701c711b6a4689db99938b7c2ef3537d8db44ec7abe9d",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/raw/physiological/README_physiological.txt",
+      "size_bytes": 1674,
+      "size_mb": 0.002,
+      "suffix": ".txt",
+      "sha256": "3974c20fe82ccffb4b4d31fa8287415f3e4caf751d0400641f5d4e7edd145035",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/raw/README_rawdata.txt",
+      "size_bytes": 1684,
+      "size_mb": 0.002,
+      "suffix": ".txt",
+      "sha256": "8c2eb0d6690d11c182c260b85dd466d257cbfa8cfb1a3c5f835952ac2a602bde",
+      "subject_id": null
+    },
+    {
+      "relpath": "data/README_data.txt",
+      "size_bytes": 2647,
+      "size_mb": 0.003,
+      "suffix": ".txt",
+      "sha256": "7d2f518cb52386f0f6d4158b4795cb1560d93060a66164abcc2bdcccd6a511ea",
+      "subject_id": null
+    },
+    {
+      "relpath": "metadata/participants.xlsx",
+      "size_bytes": 10596,
+      "size_mb": 0.01,
+      "suffix": ".xlsx",
+      "sha256": "63f15bfdc633fca10037ab7d3de796a5b49e6d359fe709bdef655131f5cb176d",
+      "subject_id": null
+    },
+    {
+      "relpath": "metadata/README_metadata.txt",
+      "size_bytes": 3898,
+      "size_mb": 0.004,
+      "suffix": ".txt",
+      "sha256": "76a720b57c0c17f2ee7ff87b65d63e744adb5896e4872219396e013b1644d55f",
+      "subject_id": null
+    },
+    {
+      "relpath": "metadata/seqs_order.txt",
+      "size_bytes": 5830,
+      "size_mb": 0.006,
+      "suffix": ".txt",
+      "sha256": "927aef9f68e5000dfe767c7fd49ff00ee7ec5699d955bbc6539f37d8961f02e4",
+      "subject_id": null
+    },
+    {
+      "relpath": "metadata/seqs_order_num.mat",
+      "size_bytes": 368,
+      "size_mb": 0.0,
+      "suffix": ".mat",
+      "sha256": "37e24b7c1982781cf50eca194a4df776eacea647d9facc87ca2cdacefb7af0e5",
+      "subject_id": null
+    },
+    {
+      "relpath": "metadata/seqs_order_num.xlsx",
+      "size_bytes": 11534,
+      "size_mb": 0.011,
+      "suffix": ".xlsx",
+      "sha256": "37829b5ea65920d3752b0d58078a86ff9044610183c4ec159b75861fb5e22539",
+      "subject_id": null
+    },
+    {
+      "relpath": "metadata/videos.xlsx",
+      "size_bytes": 13248,
+      "size_mb": 0.013,
+      "suffix": ".xlsx",
+      "sha256": "7bba830d351211450aab64489fdeb86efcb9757226b4c1575478bfb90665c475",
+      "subject_id": null
+    },
+    {
+      "relpath": "metadata/videos_duration.txt",
+      "size_bytes": 251,
+      "size_mb": 0.0,
+      "suffix": ".txt",
+      "sha256": "6505d2849afebd5d7ae18b088c87063c55997016c4a3ca058d37e47a2fa52f24",
+      "subject_id": null
+    },
+    {
+      "relpath": "metadata/videos_duration_num.mat",
+      "size_bytes": 276,
+      "size_mb": 0.0,
+      "suffix": ".mat",
+      "sha256": "8afcb96d4d8eec8b2c27f0293e5ebd32afe3cb9cf1c275aacc0b3062223cb76a",
+      "subject_id": null
+    },
+    {
+      "relpath": "metadata/videos_duration_num.xlsx",
+      "size_bytes": 5469,
+      "size_mb": 0.005,
+      "suffix": ".xlsx",
+      "sha256": "c20b5d4b933a461b02c35eb25e39ec62fd23f9516f1e91a0d2e4c864bd81a083",
+      "subject_id": null
+    },
+    {
+      "relpath": "README.txt",
+      "size_bytes": 5051,
+      "size_mb": 0.005,
+      "suffix": ".txt",
+      "sha256": "761be278e4fb64074143434275354b2063dad420ee6d01b1043aebbeec25dcb5",
+      "subject_id": null
+    },
+    {
+      "relpath": "scripts/f_labelData.m",
+      "size_bytes": 2874,
+      "size_mb": 0.003,
+      "suffix": ".m",
+      "sha256": "35bf3f4adea6459d8776ed00d8acf84b66a2599ae17d277fbec154035c7f08f9",
+      "subject_id": null
+    },
+    {
+      "relpath": "scripts/README_scripts.txt",
+      "size_bytes": 4794,
+      "size_mb": 0.005,
+      "suffix": ".txt",
+      "sha256": "4dd8be53082ae76b8af795957ed8f61972bffc4eedb3a7421a3d3881acc33804",
+      "subject_id": null
+    },
+    {
+      "relpath": "scripts/s01_extractViddata.m",
+      "size_bytes": 5989,
+      "size_mb": 0.006,
+      "suffix": ".m",
+      "sha256": "4ad9928db97d0d269cf4b9611927289586442f3d5554d951d5bac9a162258674",
+      "subject_id": null
+    },
+    {
+      "relpath": "scripts/s02_extractSubdata.m",
+      "size_bytes": 3571,
+      "size_mb": 0.003,
+      "suffix": ".m",
+      "sha256": "17a98832cafa49d3944d7c95488b9c98441e7d9a2ef22740d9e29be49cee75b3",
+      "subject_id": null
+    },
+    {
+      "relpath": "scripts/s03_v1_transformData.m",
+      "size_bytes": 9768,
+      "size_mb": 0.009,
+      "suffix": ".m",
+      "sha256": "1894e356d6b337dd3613c5235d0cd6b8bcea3d8955e61ced413ca96183ca5642",
+      "subject_id": null
+    },
+    {
+      "relpath": "scripts/s03_v2_interTransformData.m",
+      "size_bytes": 14646,
+      "size_mb": 0.014,
+      "suffix": ".m",
+      "sha256": "1d82221694ece58673415fe79153a586961c6d3b3e665a46db9a87bc80e08ed6",
+      "subject_id": null
+    }
+  ],
+  "structure": {
+    "n_physiological_files": 30,
+    "n_annotation_files": 30,
+    "physiological_subject_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "annotation_subject_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "subjects_with_both": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "missing_physiological": [],
+    "missing_annotation": [],
+    "expected_participants": 30,
+    "participant_count_matches_expected": true,
+    "duplicate_files": []
+  },
+  "probes": {
+    "per_subject": {
+      "1": {
+        "physio_rows": 2451584,
+        "anno_rows": 49032,
+        "physio_columns": [
+          "daqtime",
+          "ecg",
+          "bvp",
+          "gsr",
+          "rsp",
+          "skt",
+          "emg_zygo",
+          "emg_coru",
+          "emg_trap",
+          "video"
+        ],
+        "anno_columns": [
+          "jstime",
+          "valence",
+          "arousal",
+          "video"
+        ],
+        "daqtime_step_ms_median": 1.0,
+        "daqtime_step_ms_unique": 1,
+        "jstime_step_ms_median": 50.0,
+        "jstime_step_ms_unique": 1,
+        "physio_fs_hz_implied": 1000.0,
+        "anno_fs_hz_implied": 20.0,
+        "daqtime_span_ms": 2451583.0,
+        "jstime_span_ms": 2451550.0,
+        "daqtime_monotonic": true,
+        "jstime_monotonic": true,
+        "video_ids_physio": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "video_ids_anno": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "valence_min": 0.5,
+        "valence_max": 9.5,
+        "arousal_min": 1.73,
+        "arousal_max": 9.5,
+        "nonfinite_by_channel": {
+          "ecg": 0,
+          "bvp": 0,
+          "gsr": 0,
+          "rsp": 0,
+          "skt": 0,
+          "emg_zygo": 0,
+          "emg_coru": 0,
+          "emg_trap": 0
+        },
+        "channel_ranges": {
+          "ecg": [
+            -2.351,
+            2.347
+          ],
+          "bvp": [
+            24.074,
+            64.898
+          ],
+          "gsr": [
+            4.29,
+            17.264
+          ],
+          "rsp": [
+            26.904,
+            30.997
+          ],
+          "skt": [
+            26.858,
+            29.508
+          ],
+          "emg_zygo": [
+            4.744,
+            67.324
+          ],
+          "emg_coru": [
+            5.196,
+            231.221
+          ],
+          "emg_trap": [
+            4.784,
+            14.064
+          ]
+        },
+        "samples_per_emotional_video": {
+          "1": 185583,
+          "2": 173083,
+          "3": 118667,
+          "4": 160125,
+          "5": 145125,
+          "6": 146750,
+          "7": 197000,
+          "8": 143750
+        },
+        "anno_samples_per_emotional_video": {
+          "1": 3712,
+          "2": 3462,
+          "3": 2373,
+          "4": 3202,
+          "5": 2902,
+          "6": 2935,
+          "7": 3940,
+          "8": 2875
+        }
+      },
+      "15": {
+        "physio_rows": 2451584,
+        "anno_rows": 49032,
+        "physio_columns": [
+          "daqtime",
+          "ecg",
+          "bvp",
+          "gsr",
+          "rsp",
+          "skt",
+          "emg_zygo",
+          "emg_coru",
+          "emg_trap",
+          "video"
+        ],
+        "anno_columns": [
+          "jstime",
+          "valence",
+          "arousal",
+          "video"
+        ],
+        "daqtime_step_ms_median": 1.0,
+        "daqtime_step_ms_unique": 1,
+        "jstime_step_ms_median": 50.0,
+        "jstime_step_ms_unique": 1,
+        "physio_fs_hz_implied": 1000.0,
+        "anno_fs_hz_implied": 20.0,
+        "daqtime_span_ms": 2451583.0,
+        "jstime_span_ms": 2451550.0,
+        "daqtime_monotonic": true,
+        "jstime_monotonic": true,
+        "video_ids_physio": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "video_ids_anno": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "valence_min": 1.163,
+        "valence_max": 7.93,
+        "arousal_min": 2.517,
+        "arousal_max": 9.5,
+        "nonfinite_by_channel": {
+          "ecg": 0,
+          "bvp": 0,
+          "gsr": 0,
+          "rsp": 0,
+          "skt": 0,
+          "emg_zygo": 0,
+          "emg_coru": 0,
+          "emg_trap": 0
+        },
+        "channel_ranges": {
+          "ecg": [
+            -0.629,
+            3.12
+          ],
+          "bvp": [
+            32.7,
+            41.001
+          ],
+          "gsr": [
+            6.785,
+            53.028
+          ],
+          "rsp": [
+            29.13,
+            36.825
+          ],
+          "skt": [
+            23.798,
+            26.834
+          ],
+          "emg_zygo": [
+            4.413,
+            86.057
+          ],
+          "emg_coru": [
+            5.892,
+            21.456
+          ],
+          "emg_trap": [
+            5.604,
+            83.716
+          ]
+        },
+        "samples_per_emotional_video": {
+          "1": 185583,
+          "2": 173083,
+          "3": 118667,
+          "4": 160125,
+          "5": 145125,
+          "6": 146750,
+          "7": 197000,
+          "8": 143750
+        },
+        "anno_samples_per_emotional_video": {
+          "1": 3712,
+          "2": 3462,
+          "3": 2373,
+          "4": 3202,
+          "5": 2902,
+          "6": 2935,
+          "7": 3940,
+          "8": 2875
+        }
+      },
+      "30": {
+        "physio_rows": 2451584,
+        "anno_rows": 49032,
+        "physio_columns": [
+          "daqtime",
+          "ecg",
+          "bvp",
+          "gsr",
+          "rsp",
+          "skt",
+          "emg_zygo",
+          "emg_coru",
+          "emg_trap",
+          "video"
+        ],
+        "anno_columns": [
+          "jstime",
+          "valence",
+          "arousal",
+          "video"
+        ],
+        "daqtime_step_ms_median": 1.0,
+        "daqtime_step_ms_unique": 1,
+        "jstime_step_ms_median": 50.0,
+        "jstime_step_ms_unique": 1,
+        "physio_fs_hz_implied": 1000.0,
+        "anno_fs_hz_implied": 20.0,
+        "daqtime_span_ms": 2451583.0,
+        "jstime_span_ms": 2451550.0,
+        "daqtime_monotonic": true,
+        "jstime_monotonic": true,
+        "video_ids_physio": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "video_ids_anno": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12
+        ],
+        "valence_min": 0.5,
+        "valence_max": 8.291,
+        "arousal_min": 3.315,
+        "arousal_max": 9.5,
+        "nonfinite_by_channel": {
+          "ecg": 0,
+          "bvp": 0,
+          "gsr": 0,
+          "rsp": 0,
+          "skt": 0,
+          "emg_zygo": 0,
+          "emg_coru": 0,
+          "emg_trap": 0
+        },
+        "channel_ranges": {
+          "ecg": [
+            0.276,
+            2.827
+          ],
+          "bvp": [
+            29.915,
+            49.379
+          ],
+          "gsr": [
+            -30.771,
+            31.701
+          ],
+          "rsp": [
+            33.524,
+            43.542
+          ],
+          "skt": [
+            26.368,
+            26.978
+          ],
+          "emg_zygo": [
+            4.826,
+            98.128
+          ],
+          "emg_coru": [
+            6.551,
+            60.874
+          ],
+          "emg_trap": [
+            6.139,
+            85.678
+          ]
+        },
+        "samples_per_emotional_video": {
+          "1": 185583,
+          "2": 173083,
+          "3": 118667,
+          "4": 160125,
+          "5": 145125,
+          "6": 146750,
+          "7": 197000,
+          "8": 143750
+        },
+        "anno_samples_per_emotional_video": {
+          "1": 3712,
+          "2": 3462,
+          "3": 2373,
+          "4": 3202,
+          "5": 2902,
+          "6": 2935,
+          "7": 3940,
+          "8": 2875
+        }
+      }
+    },
+    "issues": []
+  }
+}

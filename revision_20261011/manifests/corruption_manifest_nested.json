@@ -1,0 +1,1105 @@
+[
+  {
+    "condition": "clean",
+    "family": "clean",
+    "level": 0.0,
+    "seed": 777,
+    "missing": [],
+    "corrupt": null
+  },
+  {
+    "condition": "missing1_d0",
+    "family": "missing_random",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [
+      2
+    ],
+    "missing_names": [
+      "gsr"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing1_d1",
+    "family": "missing_random",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 1,
+    "missing": [
+      6
+    ],
+    "missing_names": [
+      "emg_coru"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing1_d2",
+    "family": "missing_random",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 2,
+    "missing": [
+      7
+    ],
+    "missing_names": [
+      "emg_trap"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing1_d3",
+    "family": "missing_random",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 3,
+    "missing": [
+      1
+    ],
+    "missing_names": [
+      "bvp"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing1_d4",
+    "family": "missing_random",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 4,
+    "missing": [
+      4
+    ],
+    "missing_names": [
+      "skt"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing2_d0",
+    "family": "missing_random",
+    "level": 2.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [
+      0,
+      2
+    ],
+    "missing_names": [
+      "ecg",
+      "gsr"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing2_d1",
+    "family": "missing_random",
+    "level": 2.0,
+    "seed": 777,
+    "draw": 1,
+    "missing": [
+      1,
+      6
+    ],
+    "missing_names": [
+      "bvp",
+      "emg_coru"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing2_d2",
+    "family": "missing_random",
+    "level": 2.0,
+    "seed": 777,
+    "draw": 2,
+    "missing": [
+      5,
+      7
+    ],
+    "missing_names": [
+      "emg_zygo",
+      "emg_trap"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing2_d3",
+    "family": "missing_random",
+    "level": 2.0,
+    "seed": 777,
+    "draw": 3,
+    "missing": [
+      1,
+      7
+    ],
+    "missing_names": [
+      "bvp",
+      "emg_trap"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing2_d4",
+    "family": "missing_random",
+    "level": 2.0,
+    "seed": 777,
+    "draw": 4,
+    "missing": [
+      4,
+      6
+    ],
+    "missing_names": [
+      "skt",
+      "emg_coru"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing4_d0",
+    "family": "missing_random",
+    "level": 4.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [
+      0,
+      2,
+      5,
+      6
+    ],
+    "missing_names": [
+      "ecg",
+      "gsr",
+      "emg_zygo",
+      "emg_coru"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing4_d1",
+    "family": "missing_random",
+    "level": 4.0,
+    "seed": 777,
+    "draw": 1,
+    "missing": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "missing_names": [
+      "bvp",
+      "gsr",
+      "emg_zygo",
+      "emg_coru"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing4_d2",
+    "family": "missing_random",
+    "level": 4.0,
+    "seed": 777,
+    "draw": 2,
+    "missing": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "missing_names": [
+      "skt",
+      "emg_zygo",
+      "emg_coru",
+      "emg_trap"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing4_d3",
+    "family": "missing_random",
+    "level": 4.0,
+    "seed": 777,
+    "draw": 3,
+    "missing": [
+      1,
+      3,
+      6,
+      7
+    ],
+    "missing_names": [
+      "bvp",
+      "rsp",
+      "emg_coru",
+      "emg_trap"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "missing4_d4",
+    "family": "missing_random",
+    "level": 4.0,
+    "seed": 777,
+    "draw": 4,
+    "missing": [
+      1,
+      2,
+      4,
+      6
+    ],
+    "missing_names": [
+      "bvp",
+      "gsr",
+      "skt",
+      "emg_coru"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "drop_ecg",
+    "family": "missing_single",
+    "level": 1.0,
+    "seed": 777,
+    "missing": [
+      0
+    ],
+    "missing_names": [
+      "ecg"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "drop_bvp",
+    "family": "missing_single",
+    "level": 1.0,
+    "seed": 777,
+    "missing": [
+      1
+    ],
+    "missing_names": [
+      "bvp"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "drop_gsr",
+    "family": "missing_single",
+    "level": 1.0,
+    "seed": 777,
+    "missing": [
+      2
+    ],
+    "missing_names": [
+      "gsr"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "drop_rsp",
+    "family": "missing_single",
+    "level": 1.0,
+    "seed": 777,
+    "missing": [
+      3
+    ],
+    "missing_names": [
+      "rsp"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "drop_skt",
+    "family": "missing_single",
+    "level": 1.0,
+    "seed": 777,
+    "missing": [
+      4
+    ],
+    "missing_names": [
+      "skt"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "drop_emg_zygo",
+    "family": "missing_single",
+    "level": 1.0,
+    "seed": 777,
+    "missing": [
+      5
+    ],
+    "missing_names": [
+      "emg_zygo"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "drop_emg_coru",
+    "family": "missing_single",
+    "level": 1.0,
+    "seed": 777,
+    "missing": [
+      6
+    ],
+    "missing_names": [
+      "emg_coru"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "drop_emg_trap",
+    "family": "missing_single",
+    "level": 1.0,
+    "seed": 777,
+    "missing": [
+      7
+    ],
+    "missing_names": [
+      "emg_trap"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "wearable_only",
+    "family": "wearable",
+    "level": 5.0,
+    "seed": 777,
+    "missing": [
+      0,
+      3,
+      5,
+      6,
+      7
+    ],
+    "missing_names": [
+      "ecg",
+      "rsp",
+      "emg_zygo",
+      "emg_coru",
+      "emg_trap"
+    ],
+    "corrupt": null
+  },
+  {
+    "condition": "gaussian_noise_s0.25_d0",
+    "family": "corrupt_gaussian_noise",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "gaussian_noise",
+      "severity": 0.25,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "gaussian_noise_s0.25_d1",
+    "family": "corrupt_gaussian_noise",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "gaussian_noise",
+      "severity": 0.25,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "gaussian_noise_s0.5_d0",
+    "family": "corrupt_gaussian_noise",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "gaussian_noise",
+      "severity": 0.5,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "gaussian_noise_s0.5_d1",
+    "family": "corrupt_gaussian_noise",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "gaussian_noise",
+      "severity": 0.5,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "gaussian_noise_s1_d0",
+    "family": "corrupt_gaussian_noise",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "gaussian_noise",
+      "severity": 1.0,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "gaussian_noise_s1_d1",
+    "family": "corrupt_gaussian_noise",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "gaussian_noise",
+      "severity": 1.0,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "flatline_s0.25_d0",
+    "family": "corrupt_flatline",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "flatline",
+      "severity": 0.25,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "flatline_s0.25_d1",
+    "family": "corrupt_flatline",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "flatline",
+      "severity": 0.25,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "flatline_s0.5_d0",
+    "family": "corrupt_flatline",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "flatline",
+      "severity": 0.5,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "flatline_s0.5_d1",
+    "family": "corrupt_flatline",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "flatline",
+      "severity": 0.5,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "flatline_s1_d0",
+    "family": "corrupt_flatline",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "flatline",
+      "severity": 1.0,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "flatline_s1_d1",
+    "family": "corrupt_flatline",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "flatline",
+      "severity": 1.0,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "sample_dropout_s0.25_d0",
+    "family": "corrupt_sample_dropout",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "sample_dropout",
+      "severity": 0.25,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "sample_dropout_s0.25_d1",
+    "family": "corrupt_sample_dropout",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "sample_dropout",
+      "severity": 0.25,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "sample_dropout_s0.5_d0",
+    "family": "corrupt_sample_dropout",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "sample_dropout",
+      "severity": 0.5,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "sample_dropout_s0.5_d1",
+    "family": "corrupt_sample_dropout",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "sample_dropout",
+      "severity": 0.5,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "sample_dropout_s1_d0",
+    "family": "corrupt_sample_dropout",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "sample_dropout",
+      "severity": 1.0,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "sample_dropout_s1_d1",
+    "family": "corrupt_sample_dropout",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "sample_dropout",
+      "severity": 1.0,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "clipping_s0.25_d0",
+    "family": "corrupt_clipping",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "clipping",
+      "severity": 0.25,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "clipping_s0.25_d1",
+    "family": "corrupt_clipping",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "clipping",
+      "severity": 0.25,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "clipping_s0.5_d0",
+    "family": "corrupt_clipping",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "clipping",
+      "severity": 0.5,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "clipping_s0.5_d1",
+    "family": "corrupt_clipping",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "clipping",
+      "severity": 0.5,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "clipping_s1_d0",
+    "family": "corrupt_clipping",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "clipping",
+      "severity": 1.0,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "clipping_s1_d1",
+    "family": "corrupt_clipping",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "clipping",
+      "severity": 1.0,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "impulse_s0.25_d0",
+    "family": "corrupt_impulse",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "impulse",
+      "severity": 0.25,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "impulse_s0.25_d1",
+    "family": "corrupt_impulse",
+    "level": 0.25,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "impulse",
+      "severity": 0.25,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "impulse_s0.5_d0",
+    "family": "corrupt_impulse",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "impulse",
+      "severity": 0.5,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "impulse_s0.5_d1",
+    "family": "corrupt_impulse",
+    "level": 0.5,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "impulse",
+      "severity": 0.5,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  },
+  {
+    "condition": "impulse_s1_d0",
+    "family": "corrupt_impulse",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 0,
+    "missing": [],
+    "corrupt": {
+      "kind": "impulse",
+      "severity": 1.0,
+      "channels": [
+        0,
+        2,
+        5,
+        6
+      ],
+      "channel_names": [
+        "ecg",
+        "gsr",
+        "emg_zygo",
+        "emg_coru"
+      ]
+    }
+  },
+  {
+    "condition": "impulse_s1_d1",
+    "family": "corrupt_impulse",
+    "level": 1.0,
+    "seed": 777,
+    "draw": 1,
+    "missing": [],
+    "corrupt": {
+      "kind": "impulse",
+      "severity": 1.0,
+      "channels": [
+        2,
+        3,
+        4,
+        7
+      ],
+      "channel_names": [
+        "gsr",
+        "rsp",
+        "skt",
+        "emg_trap"
+      ]
+    }
+  }
+]
